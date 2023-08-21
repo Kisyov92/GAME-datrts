@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  height: 100vh;
+}
+
+.game-container {
+  background-color: #a6e3e9;
+  height: 100%;
+}
+
+/*********************************/
+/* MODE WINDOW */
+/*********************************/
+
+.mode-choice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eee3cb;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.mode-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.mode-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.mode-option {
+  font-size: 2.4rem;
+  padding: 1rem 2rem;
+  background-color: rgba(227, 183, 160, 0.7);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.mode-option:hover {
+  background-color: rgba(227, 183, 160);
+}
