@@ -71,6 +71,9 @@ function startTimer() {
   if (difficulty === "medium") {
     setTargetSize(150);
   }
+  if (difficulty === "hard") {
+    setTargetSize(100);
+  }
 }
 
 function endGame() {
