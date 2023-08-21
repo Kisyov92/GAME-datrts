@@ -61,3 +61,14 @@ body {
 .mode-option:hover {
   background-color: rgba(227, 183, 160);
 }
+
+.game-info {
+  display: none;
+  width: fit-content;
+  padding: 2rem;
+  font-size: 2.8rem;
+}
+
+.game-info p {
+  margin-bottom: 1.5rem;
+}
