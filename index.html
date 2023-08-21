@@ -13,21 +13,44 @@
     />
 
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <section class="game-container">
-      <div class="game-info">
+      <div class="game-info hide-d">
         <p>Points: <span class="points"></span></p>
         <p>Time: <span class="time"></span></p>
+        <p>Added time: <span class="added-time"></span></p>
         <p>Difficulty: <span class="difficulty"></span></p>
       </div>
 
-      <div class="mode-choice">
+      <div class="window mode-choice">
         <p class="mode-heading">Choose difficulty:</p>
         <div class="mode-options">
-          <p class="mode-option" data-mode="1">Easy</p>
-          <p class="mode-option" data-mode="2">Medium</p>
-          <p class="mode-option" data-mode="3">Hard</p>
+          <p class="mode-option" data-mode="easy">Easy</p>
+          <p class="mode-option" data-mode="medium">Medium</p>
+          <p class="mode-option" data-mode="hard">Hard</p>
+        </div>
+      </div>
+
+      <div class="window game-end hide-d">
+        <p class="game-end-message end-t"></p>
+        <p class="cta">Try one more time!</p>
+        <p class="mode-heading">Choose difficulty:</p>
+        <div class="mode-options">
+          <p class="mode-option" data-mode="easy">Easy</p>
+          <p class="mode-option" data-mode="medium">Medium</p>
+          <p class="mode-option" data-mode="hard">Hard</p>
+        </div>
+      </div>
+
+      <div class="start-btn hide-d">START GAME</div>
+
+      <div class="target hide-d">
+        <div class="outer" data-points="1">
+          <div class="mid" data-points="2">
+            <div class="inner" data-points="3"></div>
+          </div>
         </div>
       </div>
     </section>
